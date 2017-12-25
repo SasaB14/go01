@@ -24,4 +24,5 @@ func main() {
 
 	//u Go-u sve se prosledjuje po vrednosti
 	//kada prosledimo memorijsku adresu prosledjujemo vrednost
+
 }
