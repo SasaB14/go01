@@ -8,6 +8,6 @@ func zero(x int) {
 
 func main() {
 	x := 5
-	zero(x)
+	zero(x)        //funkcija dobija kopiju vrednosti na pravu vrednost za X
 	fmt.Println(x) //x je i dalje 5
 }

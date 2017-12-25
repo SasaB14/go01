@@ -1,0 +1,14 @@
+&x - adresa promenljive
+fmt.Scan(&x) - u scan uvek ide adresa
+var y *int = &x - deklaracija pokazivaca y tipa *int (x mora biti tipa int)
+*y - vrednost zapisana na adresi na koju pokazuje pokazivac y
+*y = 11 - promena vrednosti zapisane na toj adresi na kojoj pokazuje pokazivac y
+
+
+//ako je funkcija sa pokazivacem kao argument se prosledjuje adresa promenljive koja ide
+//u funkciju
+func zero(z *int) {
+	*z = 0
+}
+
+zero(&x) //prosledjujemo adresu promenljive -- funkcija zero ima argument pokazivac
