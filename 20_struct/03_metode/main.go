@@ -8,6 +8,8 @@ type person struct {
 	age   int
 }
 
+//(p person) je receiver i on ovu funkciju prikljucuje tipu person
+//bilo koja vrednost tipa person ima pristup ovoj metodi
 func (p person) fullName() string {
 	return p.first + " " + p.last
 }
